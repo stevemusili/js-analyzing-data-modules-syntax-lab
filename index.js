@@ -1,4 +1,11 @@
+function combineUsers(...args) {
+  const combinedObject = {users: []};
 
+  for(const arg of args) {
+    combinedObject.users = [...combinedObject.users, ...arg];
+  }
+  
+}
 
 
 module.exports = {
